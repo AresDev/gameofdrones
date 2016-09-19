@@ -1,6 +1,4 @@
-# Game of Drones — Game the seed for AngularJS apps
-
-In Game of Drones there are two players trying to conquer each other.
+# Game of Drones
 
 In Game of Drones there are two players trying to conquer each other.
 
