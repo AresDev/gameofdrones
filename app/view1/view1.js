@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('GameOfDrones.view1', ['ngRoute','ui.bootstrap','GameOfDrones'])
+angular.module('GameOfDrones.view1', ['ngRoute','GameOfDrones'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/view1', {

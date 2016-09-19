@@ -3,11 +3,10 @@ var apiServiceURL = window.location.protocol + "//private-4c4fc-gameofdrones.api
 // Declare app level module which depends on views, and components
 var GameOfDrones =	angular.module('GameOfDrones', [
 					  'ngRoute',
-					  'ui.bootstrap',
 					  'restangular',
 					  'GameOfDrones.view1',
 					  'GameOfDrones.view2',
-					  'GameOfDrones.resultView',
+					  'GameOfDrones.viewResult',
 					  'GameOfDrones.version'
 					]).
 					config(['$locationProvider', '$routeProvider', 'RestangularProvider', function($locationProvider, $routeProvider, RestangularProvider) {

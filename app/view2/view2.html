@@ -1,34 +1,26 @@
-<div>
-<h1>Round {{round}}</h1>
-<h3>{{currentPlayer}}</h3>
-<form name="playForm" ng-submit="playForm.$valid && ok()">
-<div class="form-group">
-	<label>Select move:</label>
-	<select type="Select" class="form-control" ng-model="selectedMove" ng-options="move.move for move in moves" required></select>
-</div>
-	<button type="submit" class="btn btn-default">Ok</button>
-</form>
-</div>
-<div ng-show='history.length'>
-<h2>Score</h2>
-<table>
-	<tbody >
-		<th>
-			<td>
-				Round
-			</td>
-			<td>Winner
-			</td>
-		</th>
-		<tr ng-repeat="result in history">
-			<td>
-				{{result.round}}
-			</td>
-			<td>
-				{{result.winner.name}}
-			</td>
-		</tr>
-	</tbody>
-</table>
- 
+<div class="centered formbackground">
+	<div class="row">
+		<div>
+			<h1>Round {{round}}</h1>
+			<h3>{{currentPlayer}}</h3>
+			<form name="playForm" ng-submit="playForm.$valid && ok()">
+				<div class="form-group">
+					<label>Select move:</label>
+					<select type="Select" class="form-control" ng-model="selectedMove" ng-options="move.move for move in moves" required></select>
+				</div>
+				<button type="submit" class="btn btn-md btn-primary center-block">Ok</button>
+			</form>
+		</div>
+		<div ng-show='history.length'>
+			<h2>Score</h2>
+			<div class="row">
+				<div class="col-sm-2">Round</div>
+				<div class="col-sm-2">Winner</div>
+			</div>
+			<div class="row" ng-repeat="result in history">
+				<div class="col-sm-2">{{result.round}}</div>
+				<div class="col-sm-2">{{result.winner.name}}</div>
+			</div>
+		</div>
+	</div>
 </div>

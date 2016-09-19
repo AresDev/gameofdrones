@@ -18,7 +18,7 @@ if(GameServices.moves.length > 0){
 	$scope.ok = function(){
 	  GameServices.playTurn($scope.selectedMove);
 	  if(GameServices.gameOver){
-	  	$location.path('/resultView');
+	  	$location.path('/viewResult');
 	  }
 
 	  $scope.round = GameServices.round;
